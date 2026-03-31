@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grunderna</title>
+    <link rel="stylesheet" href="./Dropdown-menu/style.css">
+    <script src="./Dropdown-menu/menu.js" defer></script>
+</head>
+<body>
+    <a class="SkipLink" href="#MainContent">Skip to main content</a>
+    <header>
+        <nav>
+            <div class="flex-layout"> <span class="logo-brand">Projekt 2</span>
+            </div>
+            <ul class="primary-navigation" id="primary-navigation">
+                <li><a class="nav-link" href="#Home">Hem</a></li>
+                <li class="dropdown">
+                    <a class="nav-link" href="#Portfolio">HTML</a>
+                    <ul>
+                        <li><a class="nav-link" href="#webb">HTMLs Historia</a></li> 
+                        <li><a class="nav-link" href="#prog">HTMLs Grunder</a></li> 
+                        <li><a class="nav-link" href="#">Tillgänglighet</a></li>
+                        <li><a class="nav-link" href="#">Document Object Model</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link" href="#Contacts">Kontakt</a></li>
+            </ul>
+            <button class="hamburger-button" id="hamburger-button" aria-label="hamburger-button" aria-expanded="false">
+                <svg fill="var(--clr-secondary)" class="icon-hamburger" viewbox="0 0 100 100" width="32">
+                    <rect class="line top" width="90" height="3" x="5" y="30" rx="2"></rect>
+                    <rect class="line middle" width="90" height="3" x="5" y="50" rx="2"></rect>
+                    <rect class="line bottom" width="50" height="3" x="45" y="70" rx="2"></rect>    
+                </svg>
+            </button>
+        </nav>
+    </header>   
+
+
+    <main id="MainContent"> <section class="title-section-tillgänglighet">
+            <header class="title-block-div"> <h1 class="p">Tillgänglighet på Webben</h1></header>
+        </section>
+
+        <div class="grid-2"> <article> <h2>Vad är webbtillgänglighet?</h2>
+                <p>Webbtillgänglighet (eller accessibility) handlar om att designa och bygga digitala tjänster så att de kan användas av alla, inklusive personer med funktionsnedsättningar. Det innebär att innehållet ska vara uppfattbart, hanterbart, begripligt och robust.</p>
+            </article>
+            <div> <img src="/assets/images/blindwoman-subway.webp" alt="Image of blind woman sitting on a subway" class="img">
+            </div>
+        
+            <article>
+                <h2>Varför är det viktigt?</h2>
+                <p>Förutom att det är en demokratisk rättighet att kunna ta del av information, finns det tre tunga skäl:</p>
+                <ul>
+                    <li>Inkludering: Över 20% av befolkningen har någon form av permanent funktionsnedsättning.</li>
+                    <li>Användarvänlighet: Bra tillgänglighet gör sajten bättre för alla, till exempel den som surfar i starkt solljus eller har en bruten arm.</li>
+                    <li>Lagkrav: Enligt DOS-lagen och Webbtillgänglighetsdirektivet måste offentliga aktörer och många privata företag följa specifika standarder (WCAG).</li>
+                </ul>
+            </article>
+            <div>
+                <img src="/assets/images/blindwoman-subway.webp" alt="image of Arpanet logo" class="img">
+            </div>
+
+            <article>
+                <h2>Skip-link</h2>
+                <p>En Skip-link är en osynlig länk som ligger allra först i koden. Den blir synlig när man använder tab-tangenten.</p>
+                <ul>
+                    <li>Varför: Personer som navigerar med tangentbord (utan mus) slipper tabba sig igenom hela huvudmenyn på varje ny undersida för att nå själva texten.</li>
+                    <li>Gör så här: Skapa en länk högst upp på sidan: <code>&lt;a href="#main-content" class="skip-link"&gt;Hoppa till innehåll&lt;/a&gt;</code></li>
+                </ul>
+            </article>
+            <div>
+                <img src="/assets/images/blindwoman-subway.webp" alt="image of Arpanet logo" class="img">
+            </div>
+
+            <article>
+                <h2>Alt-attribut (Alternativ text)</h2>
+                <p>Alt-text är en beskrivning av en bild som läses upp av skärmläsare för användare med synnedsättning.</p>
+                <ul>
+                    <li>Varför: Utan alt-text missar användaren sammanhanget. Om bilden är dekorativ lämnas attributet tomt (alt=""), men för informativa bilder ska innehållet beskrivas kortfattat.</li>
+                </ul>
+            </article>
+            <div>
+                <img src="/assets/images/blindwoman-subway.webp" alt="image of Arpanet logo" class="img">
+            </div>
+
+            <article>
+                <h2>Tydlig och enkel navigering</h2>
+                <p>En förutsägbar struktur hjälper användare att hitta rätt utan frustration.</p>
+                <ul>
+                    <li>Varför: Personer med kognitiva nedsättningar eller de som använder hjälpmedel behöver veta var de är. Använd tydliga menyer, brödsmulor (breadcrumbs) och en logisk rubrikstruktur (H1, H2, H3).</li>
+                </ul>
+            </article>
+            <div>
+                <img src="/assets/images/blindwoman-subway.webp" alt="image of Arpanet logo" class="img">
+            </div>
+
+            <article>
+                <h2>Färgkontrast</h2>
+                <p>Text måste ha en tillräcklig kontrast mot bakgrunden för att vara läsbar.</p>
+                <ul>
+                    <li>Varför: Personer med nedsatt syn eller färgblindhet kan annars inte skilja texten från bakgrunden. En bra tumregel är ett kontrastförhållande på minst 4,5:1 för vanlig text.</li>
+                </ul>
+            </article>
+            <div>
+                <img src="/assets/images/blindwoman-subway.webp" alt="image of Arpanet logo" class="img">
+            </div>
+
+            <article>
+                <h2>Klickbara områden</h2>
+                <p>Knappar och länkar måste vara tillräckligt stora för att man ska kunna klicka på dem utan problem.</p>
+                <ul>
+                    <li>Varför: Personer med darrningar, motoriska svårigheter eller de som använder mobila enheter behöver ytor som är lätta att pricka. En rekommenderad storlek är minst 44x44 pixlar.</li>
+                </ul>
+            </article>
+            <div>
+                <img src="/assets/images/blindwoman-subway.webp" alt="image of Arpanet logo" class="img">
+            </div>
+
+            <article>
+                <h2>Responsiv design</h2>
+                <p>Sidan ska fungera och se bra ut oavsett om man använder en stor datorskärm, en surfplatta eller en mobil.</p>
+                <ul>
+                    <li>Varför: Många med synnedsättning förstorar texten i webbläsaren (zoomar). Om designen inte är responsiv kommer texten att "klippas" eller kräva horisontell scrollning, vilket gör sidan obrukbar.</li>
+                </ul>
+            </article>
+            <div>
+                <img src="/assets/images/blindwoman-subway.webp" alt="image of Arpanet logo" class="img">
+            </div>
+
+            <article>
+                <h2>Semantisk HTML</h2>
+                <p>Att använda rätt kod för rätt sak (t.ex. button för knappar och a för länkar).</p>
+                <ul>
+                    <li>Varför: Hjälpmedel som skärmläsare förstår vad olika element gör baserat på koden.</li>
+                </ul>
+            </article>
+            <div>
+                <img src="/assets/images/blindwoman-subway.webp" alt="image of Arpanet logo" class="img">
+            </div>
+
+            <article>
+                <h2>Fokusmarkering</h2>
+                <p>När man navigerar med tangentbordet visas ofta en ram (outline) runt det element man befinner sig på.</p>
+                <ul>
+                    <li>Varför: Detta är "muspekaren" för tangentbordsanvändare. Ta aldrig bort denna utan att ersätta den med en annan tydlig visuell markering.</li>
+                </ul>
+            </article>
+            <div>
+                <img src="/assets/images/blindwoman-subway.webp" alt="image of Arpanet logo" class="img">
+            </div>
+        
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Projekt 2</p>
+    </footer>
+</body>
+</html>

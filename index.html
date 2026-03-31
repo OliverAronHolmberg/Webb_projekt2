@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="../Dropdown-menu/style.css">
+    
+    <script src="/Dropdownm-menu/menu.js" defer></script>
+    <script src="copy.js" defer></script>
+</head>
+<body>
+
+
+    <a class="SkipLink" href="#MainContent">Skip to main content</a>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="flex-layout">
+                <!--en SVG logo så jag kan ändra färg ... se i style.css under selector svg g path. -->
+                
+                <span class="logo-brand">Projekt 2</span>
+            </div>
+            <ul class="primary-navigation" id="primary-navigation">
+                <li><a class="nav-link" href="#Home">Hem</a></li>
+                <!-- dropdown-meny skapas med dropdown-klass -->
+                <li class="dropdown">
+                    <a class="nav-link" href="#Portfolio">HTML</a>
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="#webb">HTMLs Historia</a>
+                        </li> 
+                        <li>
+                            <a class="nav-link" href="#prog">HTMLs Grunder</a>
+                        </li> 
+                        <li>
+                            <a class="nav-link" href="#">Tillgänglighet</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Document Object Model</a>
+                        </li>
+
+                        
+                        
+                        
+
+                        
+                    </ul>
+                </li>
+                <li><a class="nav-link"  href="#Contacts">Kontakt</a></li>
+            </ul>
+            <button class="hamburger-button" id="hamburger-button" aria-label="hamburger-button" aria-expanded="false">
+                <svg fill="var(--clr-secondary)" class="icon-hamburger" viewbox="0 0 100 100" width="32">
+                    <rect class="line top" width="90" height="3" x="5" y="30" rx="2"></rect>
+                    <rect class="line middle" width="90" height="3" x="5" y="50" rx="2"></rect>
+                    <rect class="line bottom" width="50" height="3" x="45" y="70" rx="2"></rect>    
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main id="MainContent">
+        <section class="Home" id="Home">
+            <div class="Background-img">
+                <div class="div-flex">
+                    <div class="">
+                        <h1>Lär dig grunderna i Webbutväckling</h1>
+                        <p>Oavsett om du är en nybörjare eller en erfaren webbutväcklare kan du lära dig om webben här.</p>
+                        <div class="div-button">
+                            <a class="github-link" href="#contact">    
+                                <strong class="p-github">Kom igång är</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+
+                </div>
+        </section>
+
+        <section class="Portfolio" id="Portfolio">
+            <div class="Portfolio-div">
+                <h2 class="portfolio-h2" >Portfolio</h2>
+                <p class="portfolio-text">Här hittar du mina projekt inom programmering, webbutväckling och design. Varje projekt visar min förmåga att lösa problem och skapa användbara lösningar.</p>
+            </div>
+
+            <h3 class="Portfolio-h2">Uppgifter</h3>
+            <h4 class="Portfolio-h3" id="webb">Webbutveckling</h4>
+            <a class="Portfolio-card" href="/Uppgifter/u1/index.html">
+                <div class="portfolio-div">
+                    <span class="heading">Uppgift 1</span>
+                    <p>Detta är en simpel hemsida som introducerar grundläggande HTML-struktur samt grundläggande CSS-stilar</p>    
+                </div>
+                <img src="/assets/images/uppgift1.png" class="Portfolio-card-img" alt="Bild av uppgift 1">
+            </a>
+
+            <a class="Portfolio-card" href="/Uppgifter/u2/index.html">
+                <div class="portfolio-div">
+                    <span class="heading">Uppgift 2</span>
+                    <p>Detta är en utökad verision av uppgift 1, den introducerar fler HTML-element samt flera CSS-stilar</p>    
+                </div>
+                <img src="/assets/images/uppgift2.png" class="Portfolio-card-img" alt="Bild av uppgift 2">
+            </a>
+
+            <a class="Portfolio-card" href="/Uppgifter/u3/index.html">
+                <div class="portfolio-div">
+                    <span class="heading">Uppgift 3</span>
+                    <p>Detta är en webbsida som visar hur man använder olika typer av länkar, rubriker och textstycken samt intern navigering på en sida.</p>    
+                </div>
+                <img src="/assets/images/uppgift3.png" class="Portfolio-card-img" alt="Bild av uppgift 2">
+            </a>
+
+            <a class="Portfolio-card" href="/Uppgifter/u4/index.html">
+                <div class="portfolio-div">
+                    <span class="heading">Uppgift 4</span>
+                    <p>Detta är en webbsida som visar hur man använder bilder, videor (inbäddade från YouTube) och en nedladdningslänk samt enkel layout med header och huvudinnehåll.</p>    
+                </div>
+                <img src="/assets/images/uppgift4.png" class="Portfolio-card-img" alt="Bild av uppgift 2">
+            </a>
+
+            <a class="Portfolio-card" href="/Uppgifter/u5/index.html">
+                <div class="portfolio-div">
+                    <span class="heading">Uppgift 5</span>
+                    <p>Detta är en informationssida som förklarar skillnaden mellan Flexbox och CSS Grid och visar hur de kan användas för att bygga layout och struktur.</p>    
+                </div>
+                <img src="/assets/images/uppgift5.png" class="Portfolio-card-img" alt="Bild av uppgift 2">
+            </a>
+
+            <a class="Portfolio-card" href="/Uppgifter/u6/index.html">
+                <div class="portfolio-div">
+                    <span class="heading">Uppgift 6</span>
+                    <p>Detta är en webbsida som med hjälp av Flexbox och CSS Grid presenterar en jämförelse mellan layoutmetoderna och strukturerar text, listor och bilder i en tydlig layout.</p>    
+                </div>
+                <img src="/assets/images/uppgift6.png" class="Portfolio-card-img" alt="Bild av uppgift 2">
+            </a>
+
+            <h4 class="Portfolio-h3" id="prog">Programmering</h4>
+
+            <a class="Portfolio-card" href="/uppgiftr-prog/u1/u1-prog.html">
+                <div class="portfolio-div">
+                    <span class="heading">Uppgift 1</span>
+                    <p>Denna uppgift handlar om att lära sig grunderna i Python, såsom att skriva ut text på skärmen, använda olika typer av citattecken, hantera flerradiga strängar och ta emot inmatning från användaren för att skapa interaktiva program.</p>    
+                </div>
+                <img src="/assets/images/u1-prog.png" class="Portfolio-card-img" alt="Bild av uppgift 1 programmering">
+            </a>
+
+            <a class="Portfolio-card" href="/uppgiftr-prog/u2/u2-prog.html">
+                <div class="portfolio-div">
+                    <span class="heading">Uppgift 2</span>
+                    <p>Denna uppgift handlar om att förstå och använda variabler och aritmetiska operatorer i Python för att göra matematiska beräkningar, ta emot användarinmatning och skapa dynamiska kalkylatorer.</p>    
+                </div>
+                <img src="/assets/images/u2-prog.png" class="Portfolio-card-img" alt="Bild av uppgift 1 programmering">
+            </a>
+
+            <a class="Portfolio-card" href="/uppgiftr-prog/u3/u3-prog.html">
+                <div class="portfolio-div">
+                    <span class="heading">Uppgift 3</span>
+                    <p>Denna uppgift handlar om att skapa interaktiva Python-program som tar emot användarens inmatning, utför olika matematiska beräkningar (som BMI och cirkelarea), hanterar felaktiga inmatningar och simulerar tärningskast med slumpgenerering.</p>    
+                </div>
+                <img src="/assets/images/u3-prog.png" class="Portfolio-card-img" alt="Bild av uppgift 1 programmering">
+            </a>
+
+            <a class="Portfolio-card" href="/uppgiftr-prog/u4/u4-prog.html">
+                <div class="portfolio-div">
+                    <span class="heading">Uppgift 4</span>
+                    <p>Denna uppgift handlar om att öva på användarinput och loopar i Python, inklusive upprepade utskrifter, generering av talserier, skapande av gångertabeller, manuell beräkning av potenser med felhantering samt simulering av tärningskast med slumpmässiga tal.r</p>    
+                </div>
+                <img src="/assets/images/u4-prog.png" class="Portfolio-card-img" alt="Bild av uppgift 1 programmering">
+            </a>
+
+            <a class="Portfolio-card" href="/uppgiftr-prog/u5/u5-prog.html">
+                <div class="portfolio-div">
+                    <span class="heading">Uppgift 5</span>
+                    <p>Denna uppgift handlar om att skapa ett quizprogram i Python som använder listor för att lagra frågor, svarsalternativ och korrekta svar, där programmet loopar igenom frågorna, tar emot användarens svar, kontrollerar rätt eller fel, räknar poäng och visar resultatet.</p>    
+                </div>
+                <img src="/assets/images/u5-prog.png" class="Portfolio-card-img" alt="Bild av uppgift 1 programmering">
+            </a>
+
+            <a class="Portfolio-card" href="/uppgiftr-prog/u6/u6-prog.html">
+                <div class="portfolio-div">
+                    <span class="heading">Uppgift 6</span>
+                    <p>Denna uppgift handlar om att skapa flera små Python-program som tränar på inmatning, validering, jämförelser och stränghantering, där programmen kontrollerar inmatad data, hittar största och minsta tal, hanterar ord genom att kapa längder och undersöka bokstavsstorlek.</p>    
+                </div>
+                <img src="/assets/images/u6-prog.png" class="Portfolio-card-img" alt="Bild av uppgift 1 programmering">
+            </a>
+
+            <h3 class="Portfolio-h2" id="projekt">Projekt</h3>
+
+            <h4 class="Portfolio-h3">Gränssnittsdesign</h4>
+
+            <a class="Portfolio-card" href="/Projekt/Taketefitness.html">
+                <div class="portfolio-div">
+                    <span class="heading">Takete Fitness app</span>
+                    <p>Det här är ett designprojekt där jag har skapat en fitnessapp i Figma med fokus på användarvänlighet, tydlig navigering, motiverande färger och enkla flöden, och där jag har arbetat från behovsanalys till prototyp och användartester.</p>    
+                </div>
+                <img src="/assets/images/Fitness.png" class="Portfolio-card-img" alt="Bild av uppgift 1 programmering">
+            </a>
+
+            <h4 class="Portfolio-h3">Programmering</h4>
+
+            <a class="Portfolio-card" href="/Projekt/GuessTheNumber.html">
+                <div class="portfolio-div">
+                    <span class="heading">Projekt 1 | Gissa talet spel</span>
+                    <p>Det här är ett programmeringsprojekt där jag har skapat ett enkelt terminalbaserat spel "Guess The Number", där datorn slumpmässigt väljer ett nummer och användaren ska gissa rätt med hjälp av feedback om gissningen är för hög, för låg eller korrekt, vilket tränar min förståelse för loopar, villkor och felhantering.</p>    
+                </div>
+                <img src="/assets/images/Guessthenumber.png" class="Portfolio-card-img" alt="Bild av uppgift 1 programmering">
+            </a>
+
+
+            
+
+          
+            
+        </section> 
+
+        <section class="Skills">
+            <h3 class="h3-centered">Kunskaper</h3>
+            <div class="div-skills">
+                <a class="a-skill" href="https://www.python.org/" target="_blank">
+                    <div class="div-skill">
+                        <img src="/assets/images/icons/python.svg" class="skill-img">
+                        <p class="p-skill">Python</p>
+                    </div>
+                </a>
+                <a class="skill-button" href="https://www.oracle.com/java/" target="_blank">
+                    <div class="div-skill">
+                        <img src="/assets/images/icons/java-colored.svg" class="skill-img">
+                        <p class="p-skill">Java</p>
+                    </div>
+                </a>
+                <a class="skill-button" href="https://isocpp.org/" target="_blank">
+                    <div class="div-skill">
+                        <img src="/assets/images/icons/c++.svg" class="skill-img">
+                        <p class="p-skill">C++</p>
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="div-skills">
+                <a class="skill-button" href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">
+                    <div class="div-skill">
+                        <img src="/assets/images/icons/html.svg" class="skill-img">
+                        <p class="p-skill">HTML</p>
+                    </div>
+                </a>
+                <a class="skill-button" href="https://www.w3.org/TR/css/" target="_blank">
+                    <div class="div-skill">
+                        <img src="/assets/images/icons/css.svg" class="skill-img">
+                        <p class="p-skill">CSS</p>
+                    </div>
+                </a>
+                <a class="skill-button" href="https://www.affinity.studio/" target="_blank">
+                    <div class="div-skill">
+                        <img src="/assets/images/icons/affinity.png" class="skill-img">
+                        <p class="p-skill">Affinity Photo 2</p>
+                    </div>
+                </a>
+                <a class="skill-button" href="https://www.figma.com/" target="_blank">
+                    <div class="div-skill" >
+                        <img src="/assets/images/icons/Figma-logo.svg" class="skill-img">
+                        <p class="p-skill">Figma</p>
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="div-skills">
+                
+                <a class="skill-button" href="https://www.mysql.com/" target="_blank">
+                    <div class="div-skill">
+                        <img src="/assets/images/icons/mysql.png" class="skill-img">
+                        <p class="p-skill">MySQL</p>
+                    </div>
+                </a>
+
+                <a class="skill-button" href="https://github.com/" target="_blank">
+                    <div class="div-skill">
+                        <img src="/assets/images/icons/github.svg" class="skill-img">
+                        <p class="p-skill">Github</p>
+                    </div>
+                </a>
+                <a class="skill-button" href="https://www.restapitutorial.com/introduction/whatisrest" target="_blank">
+                    <div class="div-skill">
+                        <img src="/assets/images/icons/rest-api.webp" class="skill-img">
+                        <p class="p-skill">REST API</p>
+                    </div>
+                </a>
+                
+            </div>
+        </section>
+
+
+        <section class="section-kontakt" id="Contacts">
+            <h2 class="h3-centered" id="contact">Kontakta mig</h2>
+            <div class="div-skills"><p class="p-skill">Är du intresserad av att samarbeta eller anställa mig? Hör gärna av dig!</p></div>
+            
+            <div class="div-skills">
+                <a href="mailto:oliveraron.holmberg@elev.ga.dbgy.se" class="skill-button">
+                    <div class="div-skill">
+                        <img class="skill-img" src="/assets/images/icons/email.png">
+                        <p class="p-skill">Sicka ett mail</p>
+                    </div>
+                </a>
+
+                <a class="skill-button" href="https://github.com/OliverAronHolmberg" target="_blank">
+                    <div class="div-skill">
+                        <img class="skill-img" src="/assets/images/icons/github.svg">
+                        <p class="p-skill">Github</p>
+                    </div>
+                </a>
+
+                <a class="skill-button" onclick="copyfunc(event)">
+                    <div class="div-skill">
+                        <img class="skill-img" src="/assets/images/icons/phone.png">
+                        <p class="p-skill">+46-073-63-96-211</p>
+                    </div>
+                </a>
+
+                
+            </div>
+        </section>
+
+
+
+    </main>  
+    
+
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
