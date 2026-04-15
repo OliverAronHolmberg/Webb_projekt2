@@ -518,6 +518,39 @@ a:hover{
    
 }
 
+.posRight{
+   justify-content: right;
+}
+.title-section-DOM{
+   display: flex;
+   background-size: cover;
+   background-image: url(/assets/images/good-software-developer-1128x635.jpg);
+   width: 100%;
+   height: 90vh;
+   display:flex;
+   flex-direction: row;
+   padding-top: 7rem;
+   padding-inline: 10rem;
+   padding-bottom: 5rem;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.title-section-hero{
+   display: flex;
+   background-size: cover;
+   background-image: url(/assets/images/good-software-developer-1128x635.jpg);
+   width: 100%;
+   height: 90vh;
+   display:flex;
+   flex-direction: row;
+   padding-top: 7rem;
+   padding-inline: 10rem;
+   padding-bottom: 5rem;
+   justify-content: space-between;
+   align-items: center;
+}
+
 .title-section-tillgänglighet{
    position: relative;
    display: flex;
