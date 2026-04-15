@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Explore web development fundamentals including HTML, CSS, and JavaScript. Learn about web history, accessibility, and DOM manipulation.">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <title>Webbutveckling Grunderna</title>
 
-    <link rel="stylesheet" href="../Dropdown-menu/style.css">
-    
-    <script src="/Dropdownm-menu/menu.js" defer></script>
-    <script src="copy.js" defer></script>
+    <link rel="stylesheet" href="./Dropdown-menu/style.css">
+    <script src="./Dropdown-menu/menu.js" defer></script>
 </head>
 <body>
 
@@ -18,13 +18,13 @@
     <header>
         <nav>
             <div class="flex-layout">
-                <!--en SVG logo så jag kan ändra färg ... se i style.css under selector svg g path. -->
+                
                 
                 <span class="logo-brand">Projekt 2</span>
             </div>
             <ul class="primary-navigation" id="primary-navigation">
                 <li><a class="nav-link" href="#Home">Hem</a></li>
-                <!-- dropdown-meny skapas med dropdown-klass -->
+            
                 <li class="dropdown">
                     <a class="nav-link" href="#Portfolio">HTML</a>
                     <ul>
@@ -63,65 +63,63 @@
     <!-- Main -->
     <main id="MainContent"> 
         <section class="title-section-hero home-hero">
-            <div class="div-title hero-content">
+            <article class="div-title hero-content">
                 <span class="hero-subtitle">Utforska Webbteknik</span>
                 <h1>Bemästra Webbens Grunder</h1>
                 <p class="white-p hero-description">
                     En komplett guide för dig som vill lära dig bygga moderna webbplatser från grunden. 
                     Vi djupdyker i struktur, design och den dynamiska logiken bakom kulisserna.
                 </p>
-                <a href="" class="cta-button">
-                    <span class="p-github">Start Exploring</span>
-                </a>
-            </div>
+            </article>
         </section>
 
         <section class="features-grid" id="Features">
             <a href="#webb" class="feature-card">
-                <h3>Struktur med HTML</h3>
+                <h2>Struktur med HTML</h2>
                 <p>Lär dig använda semantiska element för att skapa tillgängliga och sökmotorvänliga webbsidor som håller hög standard.</p>
                 <span class="card-link-text">Läs mer &rarr;</span>
             </a>
 
             <a href="#prog" class="feature-card">
-                <h3>Design med CSS</h3>
+                <h2>Design med CSS</h2>
                 <p>Från färglära till avancerade layouter med Flexbox och Grid. Skapa responsiva upplevelser för alla skärmar.</p>
                 <span class="card-link-text">Utforska Design &rarr;</span>
             </a>
 
             <a href="#" class="feature-card">
-                <h3>Logik med JS & DOM</h3>
+                <h2>Logik med JS & DOM</h2>
                 <p>Gör dina sidor interaktiva. Vi lär oss hur JavaScript manipulerar DOM-trädet för att skapa levande applikationer.</p>
-                <span class="card-link-text">Lär dig Logik &rarr;</a>
+                <span class="card-link-text">Lär dig Logik &rarr;</span>
             </a>
         </section>
 
         <section class="grid-2 summary-block">
-            <div class="summary-text">
+            <article class="summary-text">
                 <h2 class="HTML-h2">Varför lära sig webbutveckling?</h2>
                 <p>
                     Webben är plattformen som förenar världen. Genom att förstå <strong>HTML, CSS och JS</strong> får du verktygen att förvandla idéer till verklighet. 
                     Vår portal bryter ner komplexa koncept till begripliga bitar, från DOM-trädet till tillgänglighetsstandarder (WCAG).
                 </p>
-            </div>
-            <div class="center">
-                 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Kod på skärm" class="block-img summary-img">
-            </div>
+            </article>
+            <figure class="center">
+                 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Kod på skärm" class="block-img summary-img" width="600" height="400">
+                 <figcaption>Code displayed on a screen</figcaption>
+            </figure>
         </section>
     </main>
 
     <footer id="Contacts" class="main-footer">
-        <div class="footer-container">
-            <div class="footer-info">
+        <section class="footer-container">
+            <article class="footer-info">
                 <span class="logo-brand footer-logo">Projekt 2</span>
                 <p class="footer-text">Utbildningsportal skapad för att visualisera webbens tekniska ekosystem.</p>
-            </div>
-            <div class="div-button">
-                <a href="https://github.com/OliverAronHolmberg/Webb_projekt2.git" class="github-link footer-github">
+            </article>
+            <aside class="div-button">
+                <a href="https://github.com/OliverAronHolmberg/Webb_projekt2.git" class="github-link footer-github animate-fade-in-up-delay-2" rel="noopener noreferrer">
                     <span class="p-github">GitHub Repo</span>
                 </a>
-            </div>
-        </div>
+            </aside>
+        </section>
     </footer>
 
             
@@ -130,10 +128,6 @@
             
        
 
-    <!-- Footer -->
-    <footer>
-
-    </footer>
     
 </body>
 </html>

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grunderna</title>
+    <meta name="description" content="Förstå Document Object Model (DOM) - bron mellan HTML och JavaScript. Lär dig navigera, manipulera och interagera med webbsidans struktur.">
+    <title>Document Object Model</title>
     <link rel="stylesheet" href="./Dropdown-menu/style.css">
     <script src="./Dropdown-menu/menu.js" defer></script>
 </head>
@@ -39,10 +40,10 @@
 
     <main id="MainContent"> 
         <section class="title-section-DOM">
-            <section class="div-title">
+            <article class="div-title animate-fade-in-up">
                     <h1>Document Object Model</h1>
                     <p class="white-p">Hur är webben egentligen uppgyggt?</p>
-            </section>
+            </article>
                 
         </section>
       
@@ -51,9 +52,10 @@
                     <h2>Vad är Document Object Model?</h2>
                     <p>Document Object Model, förkortat DOM, fungerar som en bro mellan din HTML-kod och programmeringsspråk som JavaScript. När webbläsaren läser in din webbsida skapar den en objektbaserad representation av innehållet i en trädstruktur. Detta gör att varje enskild del av sidan, från den största rubriken till den minsta bilden, blir ett objekt som går att styra och förändra i realtid efter att sidan har laddats.</p>
                 </article>
-            <div>
-                <img src="/assets/images/DOM-model.svg (1).png" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/DOM-model.svg (1).png" alt="Document Object Model tree structure diagram" class="img" width="500" height="350" loading="lazy">
+                <figcaption>DOM model diagram</figcaption>
+            </figure>
 
             <article>
                 <h2>Skillnaden mellan källkod och DOM</h2>
@@ -61,81 +63,81 @@
             </article>
             
 
-            <div>
-                <img src="/assets/images/flux.png" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/flux.png" alt="Data flow diagram showing source code and DOM relationship" class="img" width="500" height="350" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Att navigera i trädet</h2>
                 <p>Genom att betrakta webbsidan som ett släktträd kan man enkelt navigera mellan olika element för att hitta rätt information. Man kan röra sig uppåt till föräldraelement, nedåt till barnelement eller åt sidan till syskon. Denna logiska struktur gör det möjligt för utvecklare att hitta ett specifikt stycke inuti en viss behållare utan att behöva söka igenom hela dokumentet, vilket sparar både tid och datorkraft.</p>
             </article>
 
-            <div>
-                <img src="/assets/images/pic_htmltree.gif" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/tillganglighet.jpg" alt="Web accessibility and screen reader usage illustration" class="img" width="500" height="350" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Händelsehantering och interaktion</h2>
                 <p>En av de mest kraftfulla funktionerna med DOM är förmågan att lyssna på händelser som användaren utför på sidan. När någon klickar på en knapp, skriver i ett formulär eller scrollar neråt kan DOM fånga upp detta och utlösa en specifik reaktion. Detta skapar en tvåvägskommunikation där webbplatsen faktiskt svarar på besökarens beteende istället för att bara vara en statisk informationsskärm.</p>
             </article>
 
-            <div>
+            <figure>
                 <img src="/assets/images/event-propagation-v2.png" alt="image of Arpanet logo" class="img">
-            </div>
+            </figure>
 
             <article>
                 <h2>Dynamisk innehållshantering</h2>
                 <p>DOM gör det möjligt att byta ut texter och bilder på en sida helt utan att användaren behöver ladda om webbläsaren. Genom att ändra egenskaper som textinnehåll eller källan för en bild kan man skapa flöden som uppdateras automatiskt, likt en live-chatt eller en aktiekurs. Detta skapar en sömlös känsla där informationen alltid känns aktuell och relevant för den som besöker sajten.</p>
             </article>
 
-            <div>
-                <img src="/assets/images/1677482747692.png" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/1677482747692.png" alt="Dynamic content update example" class="img" width="500" height="350" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Manipulation av stilar och layout</h2>
                 <p>Utöver att ändra själva texten kan man via DOM styra hur sidan ser ut genom att manipulera dess CSS. Man kan lägga till eller ta bort klasser på ett element för att aktivera animationer eller ändra färgscheman när en användare interagerar med sidan. Detta används ofta för att skapa mörkt läge, visa varningsmeddelanden i rött eller för att fälla ut menyer som tidigare varit dolda för ögat.</p>
             </article>
             
-            <div>
-                <img src="/assets/images/pic_htmltree.gif" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/pic_htmltree.gif" alt="HTML document tree structure hierarchy" class="img" width="500" height="350" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Skapa nya element på språng</h2>
                 <p>Med DOM är man inte begränsad till de element som fanns i HTML-filen från början. Man kan skapa helt nya element direkt i webbläsarens minne och sedan placera ut dem på lämpliga ställen på sidan. Detta är grunden för moderna webbapplikationer där nya inlägg eller kommentarer dyker upp i listan så fort de skapas, vilket ger en app-liknande upplevelse direkt i webbläsaren.</p>
             </article>
 
-            <div>
-                <img src="/assets/images/event-propagation-v2.png" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/event-propagation-v2.png" alt="Event propagation and capturing flow diagram" class="img" width="500" height="350" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Prestanda och effektivitet</h2>
                 <p>Varje gång man gör en ändring i DOM måste webbläsaren räkna om hur sidan ska ritas upp, en process som kallas reflow. Om man gör hundratals små ändringar efter varandra kan sidan upplevas som långsam. Därför arbetar professionella utvecklare ofta med att samla ihop sina ändringar och utföra dem på ett effektivt sätt för att säkerställa att animationer förblir mjuka och att användarupplevelsen inte störs av fördröjningar.</p>
             </article>
 
-            <div>
-                <img src="/assets/images/DOM-model.svg (1).png" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/DOM-model.svg (1).png" alt="DOM reflow and repaint performance diagram" class="img" width="500" height="350" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Säkerhet i skriptmiljön</h2>
                 <p>Eftersom DOM ger stor makt över vad som visas för användaren finns det viktiga säkerhetsaspekter att ta hänsyn till. Man bör vara försiktig med att injicera orensad text direkt i DOM-strukturen, då detta kan leda till säkerhetshål där skadlig kod körs. Genom att använda säkra metoder för att hantera text säkerställer man att användarens data skyddas och att webbplatsen inte kan utnyttjas av obehöriga.</p>
             </article>
 
-            <div>
-                <img src="/assets/images/0_FtLO5W4Bi5tWDv-8.jpg" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/0_FtLO5W4Bi5tWDv-8.jpg" alt="JavaScript security best practices illustration" class="img" width="500" height="350" loading="lazy">
+            </figure>
 
             <article>
                 <h2>DOM och digital tillgänglighet</h2>
                 <p>En korrekt uppbyggd DOM-struktur är avgörande för att hjälpmedel som skärmläsare ska fungera på rätt sätt. Genom att använda semantiska taggar och hålla ordning på ordningsföljden i trädet ser man till att informationen blir begriplig även för de som inte navigerar visuellt. En dynamisk ändring i DOM bör alltid åtföljas av tekniska signaler som talar om för hjälpmedlet att något har förändrats på skärmen.</p>
             </article>
 
-            <div>
-                <img src="/assets/images/tillganglighet.jpg" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/tillganglighet.jpg" alt="Web accessibility and screen reader usage illustration" class="img" width="500" height="350" loading="lazy">
+            </figure>
             
 
             </div>

@@ -94,7 +94,7 @@ nav {
    font-size: calc(var(--menu-item-size) * 1.3);
    font-weight: bold;
    
-   color: var(--clr-cta);
+   color: var(--clr-secondary);
    
    margin-block: 0;
 }
@@ -115,6 +115,12 @@ img {
    object-fit: cover;
    
    font-style: italic;
+   transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+img:hover {
+   transform: scale(1.02);
+   filter: brightness(1.05);
 }
 
 .logo {
@@ -461,9 +467,59 @@ html{
     }
 }
 
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @keyframes subtleZoom {
     from { transform: scale(1); }
     to { transform: scale(1.05); }
+}
+
+/* Subtle animation classes */
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in-left {
+    animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.animate-fade-in-right {
+    animation: fadeInRight 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up-delay-1 {
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+.animate-fade-in-up-delay-2 {
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+}
+
+.animate-fade-in-up-delay-3 {
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+    opacity: 0;
 }
 
 
@@ -591,36 +647,6 @@ a:hover{
    margin-block: 1.5rem;
 }
 
-
-.cta-button {
-   
-   display: inline-block;
-   padding: 1rem 2.5rem;
-   margin-top: 1.5rem;
-   background-color: var(--clr-cta);
-   color: white;
-   text-decoration: none;
-   border-radius: var(--border-radius);
-   width: 20rem;
-   font-weight: bold;
-   font-size: 1.1rem;
-   position: relative;
-   z-index: 20;
-   pointer-events: auto; 
-   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease !important;
-}
-
-.cta-button:hover {
-    background-color: var(--clr-highlight);
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-.cta-button:hover {
-   background-color: var(--clr-highlight);
-   transform: translateY(-3px);
-   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
 
 .card-link {
    font-size: 0.9rem;
@@ -1159,6 +1185,18 @@ a{
   margin-bottom: 5rem;
 }
 
+/* Focus visible styling for keyboard navigation accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+   outline: 3px solid var(--clr-cta);
+   outline-offset: 2px;
+}
 
-
-
+.feature-card:focus-visible {
+   outline: 3px solid var(--clr-cta);
+   outline-offset: 2px;
+   border-bottom-color: var(--clr-cta);
+}

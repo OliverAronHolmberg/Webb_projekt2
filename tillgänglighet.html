@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grunderna</title>
+    <meta name="description" content="Guide till webbtillgänglighet och WCAG-standarder. Lär dig skapa tillgängliga webbplatser för alla användare, inklusive personer med funktionsnedsättningar.">
+    <title>Tillgänglighet</title>
     <link rel="stylesheet" href="./Dropdown-menu/style.css">
     <script src="./Dropdown-menu/menu.js" defer></script>
 </head>
@@ -38,14 +39,15 @@
 
 
     <main id="MainContent"> <section class="title-section-tillgänglighet">
-            <section class="title-block-div"> <h1 class="p">Tillgänglighet på Webben</h1></section>
+            <article class="title-block-div"> <h1 class="p">Tillgänglighet på Webben</h1></article>
         </section>
 
         <div class="grid-2"> <article> <h2>Vad är webbtillgänglighet?</h2>
                 <p>Webbtillgänglighet (eller accessibility) handlar om att designa och bygga digitala tjänster så att de kan användas av alla, inklusive personer med funktionsnedsättningar. Det innebär att innehållet ska vara uppfattbart, hanterbart, begripligt och robust.</p>
             </article>
-            <div> <img src="/assets/images/blindwoman-subway.webp" alt="Image of blind woman sitting on a subway" class="img">
-            </div>
+            <figure> <img src="/assets/images/blindwoman-subway.webp" alt="Blind woman using public transportation with cane" class="img" width="600" height="400" loading="lazy">
+            <figcaption>Blind woman using public transportation</figcaption>
+            </figure>
         
             <article>
                 <h2>Varför är det viktigt?</h2>
@@ -56,9 +58,9 @@
                     <li>Lagkrav: Enligt DOS-lagen och Webbtillgänglighetsdirektivet måste offentliga aktörer och många privata företag följa specifika standarder (WCAG).</li>
                 </ul>
             </article>
-            <div>
-                <img src="/assets/images/Tillgänglighetssymboler.jpg" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/Tillgänglighetssymboler.jpg" alt="Universal accessibility symbols including wheelchair, hearing aid and other disability icons" class="img" width="600" height="400" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Skip-link</h2>
@@ -68,9 +70,9 @@
                     <li>Gör så här: Skapa en länk högst upp på sidan: <code>&lt;a href="#main-content" class="skip-link"&gt;Hoppa till innehåll&lt;/a&gt;</code></li>
                 </ul>
             </article>
-            <div>
-                <img src="/assets/images/skiplink.png" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/skiplink.png" alt="Skip link functionality demonstration for keyboard navigation" class="img" width="600" height="300" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Alt-attribut (Alternativ text)</h2>
@@ -79,9 +81,9 @@
                     <li>Varför: Utan alt-text missar användaren sammanhanget. Om bilden är dekorativ lämnas attributet tomt (alt=""), men för informativa bilder ska innehållet beskrivas kortfattat.</li>
                 </ul>
             </article>
-            <div>
-                <img src="/assets/images/ALT_Attribute.webp" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/ALT_Attribute.webp" alt="HTML alt attribute code example in IDE" class="img" width="600" height="400" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Tydlig och enkel navigering</h2>
@@ -90,9 +92,9 @@
                     <li>Varför: Personer med kognitiva nedsättningar eller de som använder hjälpmedel behöver veta var de är. Använd tydliga menyer, brödsmulor (breadcrumbs) och en logisk rubrikstruktur (H1, H2, H3).</li>
                 </ul>
             </article>
-            <div>
-                <img src="/assets/images/image.png" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/image.png" alt="Website navigation menu structure diagram" class="img" width="600" height="300" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Färgkontrast</h2>
@@ -101,9 +103,9 @@
                     <li>Varför: Personer med nedsatt syn eller färgblindhet kan annars inte skilja texten från bakgrunden. En bra tumregel är ett kontrastförhållande på minst 4,5:1 för vanlig text.</li>
                 </ul>
             </article>
-            <div>
-                <img src="/assets/images/färgkonstast.png" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/färgkonstast.png" alt="Color contrast ratio examples for web accessibility" class="img" width="600" height="400" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Klickbara områden</h2>
@@ -112,9 +114,9 @@
                     <li>Varför: Personer med darrningar, motoriska svårigheter eller de som använder mobila enheter behöver ytor som är lätta att pricka. En rekommenderad storlek är minst 44x44 pixlar.</li>
                 </ul>
             </article>
-            <div>
-                <img src="/assets/images/web-button-icon-set-collection-vector.jpg" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/web-button-icon-set-collection-vector.jpg" alt="Collection of web button and icon designs" class="img" width="600" height="400" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Responsiv design</h2>
@@ -123,9 +125,9 @@
                     <li>Varför: Många med synnedsättning förstorar texten i webbläsaren (zoomar). Om designen inte är responsiv kommer texten att "klippas" eller kräva horisontell scrollning, vilket gör sidan obrukbar.</li>
                 </ul>
             </article>
-            <div>
-                <img src="/assets/images/responsiv-webbdesign.jpg" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/responsiv-webbdesign.jpg" alt="Responsive web design across different devices" class="img" width="600" height="300" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Semantisk HTML</h2>
@@ -134,9 +136,9 @@
                     <li>Varför: Hjälpmedel som skärmläsare förstår vad olika element gör baserat på koden.</li>
                 </ul>
             </article>
-            <div>
-                <img src="/assets/images/document-outline-example.jpg" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/document-outline-example.jpg" alt="HTML document outline showing semantic structure hierarchy" class="img" width="600" height="400" loading="lazy">
+            </figure>
 
             <article>
                 <h2>Fokusmarkering</h2>
@@ -145,9 +147,9 @@
                     <li>Varför: Detta är "muspekaren" för tangentbordsanvändare. Ta aldrig bort denna utan att ersätta den med en annan tydlig visuell markering.</li>
                 </ul>
             </article>
-            <div>
-                <img src="/assets/images/Skärmbild 2026-04-14 122726.png" alt="image of Arpanet logo" class="img">
-            </div>
+            <figure>
+                <img src="/assets/images/Skärmbild 2026-04-14 122726.png" alt="Focus indicator outline on keyboard navigation" class="img" width="600" height="400" loading="lazy">
+            </figure>
         
         </div>
     </main>
