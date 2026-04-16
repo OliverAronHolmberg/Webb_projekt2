@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn the history of HTML from its origins in the 1960s to modern web standards. Explore the evolution of the World Wide Web, key milestones, and future developments.">
+    <meta name="description" content="Läs om HTMLs historia från ARPANET till HTML5.">
     <title>HTMLs Historia</title>
 
-    <link rel="stylesheet" href="./Dropdown-menu/style.css">
-    <script src="./Dropdown-menu/menu.js" defer></script>
+    <link rel="stylesheet" href="../Dropdown-menu/style.css">
+    <script src="/Dropdown-menu/menu.js" defer></script>
 </head>
 <body>
     <a class="SkipLink" href="#MainContent">Skip to main content</a>
@@ -17,150 +17,101 @@
                 <span class="logo-brand">Projekt 2</span>
             </div>
             <ul class="primary-navigation" id="primary-navigation">
-                <li><a class="nav-link" href="#Home">Hem</a></li>
+                <li><a class="nav-link" href="index.html">Hem</a></li>
                 <li class="dropdown">
-                    <a class="nav-link" href="#Portfolio">HTML</a>
+                    <a class="nav-link" href="#">HTML</a>
                     <ul>
                         <li>
-                            <a class="nav-link" href="#webb">HTMLs Historia</a>
+                            <a class="nav-link" href="historia.html">HTMLs Historia</a>
                         </li> 
                         <li>
-                            <a class="nav-link" href="#prog">HTMLs Grunder</a>
+                            <a class="nav-link" href="grunderna.html">HTMLs Grunder</a>
                         </li> 
                         <li>
-                            <a class="nav-link" href="#">Tillgänglighet</a>
+                            <a class="nav-link" href="tillgänglighet.html">Tillgänglighet</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#">Document Object Model</a>
+                            <a class="nav-link" href="dom.html">Document Object Model</a>
                         </li>
-
-                        
-                        
-                        
-
-                        
                     </ul>
                 </li>
                 <li><a class="nav-link"  href="#Contacts">Kontakt</a></li>
             </ul>
             <button class="hamburger-button" id="hamburger-button" aria-label="hamburger-button" aria-expanded="false">
-                <svg fill="var(--clr-secondary)" class="icon-hamburger" viewbox="0 0 100 100" width="32">
+                <svg fill="var(--clr-secondary)" class="icon-hamburger" viewBox="0 0 100 100" width="32">
                     <rect class="line top" width="90" height="3" x="5" y="30" rx="2"></rect>
                     <rect class="line middle" width="90" height="3" x="5" y="50" rx="2"></rect>
                     <rect class="line bottom" width="50" height="3" x="45" y="70" rx="2"></rect>    
                 </svg>
             </button>
         </nav>
-    </header>   
+    </header> 
 
-
-    <main>
+    <main id="MainContent">
         <section class="title-section-historia">
-            <article class="title-block-div animate-fade-in-up">
-                <figure class="image-block-logo"><img src="assets/images/HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo image" width="200" height="100" loading="lazy"></figure>
+            <div class="title-block-div">
+                <div class="image-block-logo"><img src="assets/images/HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo" width="200" height="100" loading="eager"></div>
                 <h1>HTMLs Historia</h1>
                 <p class="white-p center">Dåtid, nutid och framtid</p>
-            </article>
+            </div>
         </section>
 
         <section>
-            <article class="timeline-block center animate-fade-in-up-delay-1">
-                <h2>Hela HMTLs Tidslinje</h2>
-
-                <div class="time-line center">
-                    <ol class="time-line-list" aria-label="HTML timeline">
-                            <li><time>1960-tal</time><span>ARPANET</span></li>
-                            <li><time>1991</time><span>WWW & HTML</span></li>
-                            <li><time>1994</time><span>W3C grundas</span></li>
-                            <li><time>1995</time><span>JavaScript</span></li>
-                            <li><time>1996</time><span>CSS 1</span></li>
-                            <li><time>2000-tal</time><span>Sociala medier</span></li>
-                            <li><time>2004</time><span>HTML5 påbörjas</span></li>
-                            <li><time>2014</time><span>HTML5 lanseras</span></li>
-                            <li><time>2019</time><span>WHATWG & W3C</span></li>
-                    </ol>
-                </div>
-            
-            </article>
-
             <div class="grid-2">
-                <section class="content-pair animate-fade-in-left">
-                    <article>
-                        <h2>Varifrån kommer Internet?</h2>
-                        <p>Internet har sina rötter i militära projekt, som t.ex. ARPANET, vilket utvecklades under 1960-talet av det amerikanska försvaret. Syftet var att skapa ett robust kommunikationssystem som kunde fungera även om delar av nätverket gick ner. Detta lade grunden för det moderna internet.</p>
-                    </article>
-                    <figure><img src="assets/images/300px-ARPANET-Logo.png" alt="ARPANET network logo" class="img" width="300" height="200" loading="lazy"><figcaption>ARPANET Logo</figcaption></figure>
-                </section>
+                <div>
+                    <h2>Varifrån kommer Internet?</h2>
+                    <p>Internet har sina rötter i militära projekt, som t.ex. ARPANET, vilket utvecklades under 1960-talet av det amerikanska försvaret. Syftet var att skapa ett robust kommunikationssystem som kunde fungera även om delar av nätverket gick ner. Detta lade grunden för det moderna internet.</p>
+                </div>
+                <div><img src="assets/images/300px-ARPANET-Logo.png" alt="ARPANET logo" width="300" height="200" loading="lazy"></div>
 
-                <section class="content-pair animate-fade-in-right">
-                    <article>
-                        <h2>HTMLs födelse</h2>
-                        <p>Webben föddes i början av 1990-talet när Tim Berners-Lee, en brittisk ingenjör, utvecklade World Wide Web (WWW). Han arbetade på CERN, där han ville skapa ett sätt för forskare att enkelt dela och få tillgång till information över internet. Hans fokus var att bygga ett system där dokument kunde kopplas samman genom länkar, vilket gjorde det lättare att navigera mellan olika sidor och resurser. 
-                        W3C (World Wide Web Consortium) grundades 1994 och tog senare över ansvaret för att utveckla och standardisera webben. Detta säkerställde att den kunde växa och utvecklas på ett enhetligt sätt. 
-                        </p>
-                    </article>
-                    <figure><img src="assets/images/Tim-Berners-Lee-2005.webp" alt="Tim Berners-Lee, creator of the World Wide Web" class="img" width="400" height="300" loading="lazy"><figcaption>Tim Berners-Lee, creator of the World Wide Web</figcaption></figure>
-                </section>
+                <div><img src="assets/images/Tim-Berners-Lee-2005.webp" alt="Tim Berners-Lee" width="400" height="300" loading="lazy"></div>
+                <div>
+                    <h2>HTMLs födelse</h2>
+                    <p>Webben föddes i början av 1990-talet när Tim Berners-Lee, en brittisk ingenjör, utvecklade World Wide Web (WWW). Han arbetade på CERN, där han ville skapa ett sätt för forskare att enkelt dela och få tillgång till information över internet. Hans fokus var att bygga ett system där dokument kunde kopplas samman genom länkar, vilket gjorde det lättare att navigera mellan olika sidor och resurser. W3C (World Wide Web Consortium) grundades 1994 och tog senare över ansvaret för att utveckla och standardisera webben. Detta säkerställde att den kunde växa och utvecklas på ett enhetligt sätt.</p>
+                </div>
 
-                <section class="content-pair">
-                    <article>
-                        <h2>Vad är World Wide Web?</h2>
-                        <p>World Wide Web (eller WWW), är ett system av webbplatser och webbsidor som är kopplade genom hyperlänkar och som nås via internet. Medan internet är infrastrukturen som möjliggör dataöverföring, är WWW det visuella gränssnittet av information som användare interagerar med, vilket gör det möjligt att navigera och interagera med innehåll online.</p>
-                    </article>
-                </section>
+                <div>
+                    <h2>Vad är World Wide Web?</h2>
+                    <p>World Wide Web (eller WWW), är ett system av webbplatser och webbsidor som är kopplade genom hyperlänkar och som nås via internet. Medan internet är infrastrukturen som möjliggör dataöverföring, är WWW det visuella gränssnittet av information som användare interagerar med, vilket gör det möjligt att navigera och interagera med innehåll online.</p>
+                </div>
+                <div><img src="assets/images/DOM-model.svg.png" alt="Document Object Model structure" width="500" height="350" loading="lazy"></div>
 
-                <section class="content-pair">
-                    <article>
-                        <h2>Vad är W3C?</h2>
-                        <p>Organisationen W3C (World Wide Web Consortium) samlar företag, forskningsinstitutioner och andra intressenter för att skapa riktlinjer och specifikationer för webbstandarder, såsom HTML, CSS och andra webbrelaterade teknologier. Genom att sätta standarder hjälper W3C till att främja innovation och säkerställa att webben fortsätter att utvecklas på ett sätt som är kompatibelt och användarvänligt.</p>
-                    </article>
-                </section>
+                <div><img src="assets/images/Lunarstorm1.jpg.webp" alt="Lunarstorm platform" width="500" height="350" loading="lazy"></div>
+                <div>
+                    <h2>Vad är W3C?</h2>
+                    <p>Organisationen W3C (World Wide Web Consortium) samlar företag, forskningsinstitutioner och andra intressenter för att skapa riktlinjer och specifikationer för webbstandarder, såsom HTML, CSS och andra webbrelaterade teknologier. Genom att sätta standarder hjälper W3C till att främja innovation och säkerställa att webben fortsätter att utvecklas på ett sätt som är kompatibelt och användarvänligt.</p>
+                </div>
 
-                <section class="content-pair">
-                    <article>
-                        <h2>JavaScript och DOM</h2>
-                        <p>För att göra webbsidor mer interaktiva började utvecklare runt 1995 använda JavaScript, ett programmeringsspråk som gör det möjligt att skapa dynamiska element på webbplatser. JavaScript fungerar tillsammans med DOM (Document Object Model), som är en struktur som representerar HTML-dokumentet och gör det möjligt för JavaScript att manipulera innehållet, stilen och strukturen på en webbsida.</p>
-                    </article>
-                    <figure><img src="assets/images/DOM-model.svg.png" alt="Document Object Model tree structure diagram" class="img" width="500" height="350" loading="lazy"><figcaption>Document Object Model structure</figcaption></figure>
-                </section>
+                <div>
+                    <h2>JavaScript och DOM</h2>
+                    <p>För att göra webbsidor mer interaktiva började utvecklare runt 1995 använda JavaScript, ett programmeringsspråk som gör det möjligt att skapa dynamiska element på webbplatser. JavaScript fungerar tillsammans med DOM (Document Object Model), som är en struktur som representerar HTML-dokumentet och gör det möjligt för JavaScript att manipulera innehållet, stilen och strukturen på en webbsida.</p>
+                </div>
 
-                <section class="content-pair">
-                    <article>
-                        <h2>Tidigt 2000-tal</h2>
-                        <p>Under tidigt 2000-tal fortsatte webben att utvecklas snabbt. Nya teknologier och standarder började dyka upp, vilket gjorde det möjligt att bygga mer komplexa och interaktiva webbplatser. Detta var också perioden när sociala medier började ta form, vilket förändrade hur människor interagerade online och delade information.</p>
-                    </article>
-                    <figure><img src="assets/images/Lunarstorm1.jpg.webp" alt="Lunarstorm early social media platform interface" class="img" width="500" height="350" loading="lazy"><figcaption>Lunarstorm, an early social media platform</figcaption></figure>
-                </section>
+                <div>
+                    <h2>Tidigt 2000-tal</h2>
+                    <p>Under tidigt 2000-tal fortsatte webben att utvecklas snabbt. Nya teknologier och standarder började dyka upp, vilket gjorde det möjligt att bygga mer komplexa och interaktiva webbplatser. Detta var också perioden när sociala medier började ta form, vilket förändrade hur människor interagerade online och delade information.</p>
+                </div>
+                <div><img src="assets/images/HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo" width="400" height="200" loading="lazy"></div>
 
-                <section class="content-pair">
-                    <article>
-                        <h2>HTML5 och dess utveckling</h2>
-                        <p>HTML5 började utvecklas 2004 och lanserades officiellt 2014, vilket markerade en stor uppgradering av språket. Denna version gjorde det möjligt för utvecklare att skapa mer avancerade och användarvänliga webbapplikationer utan behov av externa plugins. HTML5 inkluderade nya funktioner som video- och ljudstöd, geolocation och bättre formulärhantering.</p>
-                    </article>
-                    <figure><img src="assets/images/HTML5_logo_and_wordmark.svg.png" alt="HTML5 logo and wordmark" class="img" width="400" height="200" loading="lazy"><figcaption>HTML5 logo</figcaption></figure>
-                </section>
+                <div>
+                    <h2>HTML5 och dess utveckling</h2>
+                    <p>HTML5 började utvecklas 2004 och lanserades officiellt 2014, vilket markerade en stor uppgradering av språket. Denna version gjorde det möjligt för utvecklare att skapa mer avancerade och användarvänliga webbapplikationer utan behov av externa plugins. HTML5 inkluderade nya funktioner som video- och ljudstöd, geolocation och bättre formulärhantering.</p>
+                </div>
 
-                <section class="content-pair">
-                    <article>
-                        <h2>Utvecklingen av webben från 2010 till 2019</h2>
-                        <p>Mellan 2010 och 2019 fortsatte webben att växa och förändras dramatiskt. Under denna period ökade användningen av mobila enheter, vilket ledde till en stark efterfrågan på responsiv webbdesign för att anpassa webbplatser till olika skärmstorlekar. Dessutom blev CSS3 populärt, vilket gjorde det möjligt för utvecklare att skapa mer visuellt tilltalande och interaktiva webbplatser med avancerade animationer och layouter. JavaScript-bibliotek och ramverk som jQuery, Angular och React blev också vanliga och förenklade skapandet av komplexa webbapplikationer, inklusive så kallade single-page applications (SPA), där hela sidan laddas dynamiskt utan att behöva ladda om webbläsaren.</p>
-                        <p>År 2019 undertecknade WHATWG (Web Hypertext Application Technology Working Group) och W3C ett avtal om att samarbeta kring HTML5. Detta samarbete syftade till att säkerställa en enhetlig standard för HTML, vilket är viktigt för att webben ska fungera smidigt och effektivt över olika plattformar och enheter.</p>
-                    </article>
-                    <figure><img src="assets/images/good-software-developer-1128x635.jpg" alt="Software developer working at computer" class="img" width="600" height="400" loading="lazy"><figcaption>Software developer at work</figcaption></figure>
-                </section>
+                <div><img src="assets/images/good-software-developer-1128x635.jpg" alt="Software developer" width="600" height="400" loading="lazy"></div>
+                <div>
+                    <h2>Utvecklingen av webben från 2010 till 2019</h2>
+                    <p>Mellan 2010 och 2019 fortsatte webben att växa och förändras dramatiskt. Under denna period ökade användningen av mobila enheter, vilket ledde till en stark efterfrågan på responsiv webbdesign för att anpassa webbplatser till olika skärmstorlekar. Dessutom blev CSS3 populärt, vilket gjorde det möjligt för utvecklare att skapa mer visuellt tilltalande och interaktiva webbplatser. JavaScript-bibliotek och ramverk som jQuery, Angular och React blev också vanliga.</p>
+                    <p>År 2019 undertecknade WHATWG och W3C ett avtal om att samarbeta kring HTML5. Detta samarbete syftade till att säkerställa en enhetlig standard för HTML, vilket är viktigt för att webben ska fungera smidigt och effektivt över olika plattformar och enheter.</p>
+                </div>
 
-                <section class="content-pair">
-                    <article>
-                        <h2>Framtidens HTML</h2>
-                        <p>Framtidens HTML fortsätter att utvecklas i takt med teknikens framsteg. Artificiell intelligens och maskininlärning integreras allt mer i webbutveckling, vilket gör det möjligt att skapa mer personliga och adaptiva användarupplevelser. Nya HTML-element och API:er utvecklas kontinuerligt för att stödja teknologier som AR (augmented reality) och VR (virtual reality), vilket öppnar upp för helt nya sätt att interagera med webbinnehåll. Tillgänglighet och prestanda står i fokus, med standarder som säkerställer att webben förblir öppen och användbar för alla, oavsett enhet eller funktionsnedsättning. WebAssembly gör det möjligt att köra kod skriven i andra språk direkt i webbläsaren med nästan nativ prestanda, vilket ytterligare utvidgar vad som är möjligt på webben. En sak är säker HTML kommer fortsätta vara grunden för en öppen, tillgänglig och innovativ webb.</p>
-                    </article>
-                    <figure><img alt="Crystal ball representing future technology" src="assets/images/crystalballhand.jpg" class="img" width="600" height="400" loading="lazy"><figcaption>Crystal ball representing future technology</figcaption></figure>
-                </section>
-
-            </section>
-
+                <div>
+                    <h2>Framtidens HTML</h2>
+                    <p>Framtidens HTML fortsätter att utvecklas i takt med teknikens framsteg. Artificiell intelligens och maskininlärning integreras allt mer i webbutveckling, vilket gör det möjligt att skapa mer personliga och adaptiva användarupplevelser. Nya HTML-element och API:er utvecklas kontinuerligt för att stödja teknologier som AR (augmented reality) och VR (virtual reality). Tillgänglighet och prestanda står i fokus, med standarder som säkerställer att webben förblir öppen och användbar för alla. En sak är säker - HTML kommer fortsätta vara grunden för en öppen, tillgänglig och innovativ webb.</p>
+                </div>
+                <div><img alt="Crystal ball" src="assets/images/crystalballhand.jpg" width="600" height="400" loading="lazy"></div>
+            </div>
         </section>
-
     </main>
 
     <footer id="Contacts" class="main-footer">
@@ -170,13 +121,11 @@
                 <p class="footer-text">Utbildningsportal skapad för att visualisera webbens tekniska ekosystem.</p>
             </article>
             <aside class="div-button">
-                <a href="https://github.com/OliverAronHolmberg/Webb_projekt2.git" class="github-link footer-github animate-fade-in-up-delay-2" rel="noopener noreferrer">
+                <a href="https://github.com/OliverAronHolmberg/Webb_projekt2.git" class="github-link footer-github" rel="noopener noreferrer">
                     <span class="p-github">GitHub Repo</span>
                 </a>
             </aside>
         </section>
     </footer>
-    
-    
 </body>
 </html>

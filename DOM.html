@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Förstå Document Object Model (DOM) - bron mellan HTML och JavaScript. Lär dig navigera, manipulera och interagera med webbsidans struktur.">
-    <title>Document Object Model</title>
+    <meta name="description" content="Explore web development fundamentals including HTML, CSS, and JavaScript. Learn about web history, accessibility, and DOM manipulation.">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <title>Webbutveckling Grunderna</title>
+
     <link rel="stylesheet" href="./Dropdown-menu/style.css">
     <script src="./Dropdown-menu/menu.js" defer></script>
 </head>
 <body>
+
+
     <a class="SkipLink" href="#MainContent">Skip to main content</a>
+    <!-- Header -->
     <header>
         <nav>
-            <div class="flex-layout"> <span class="logo-brand">Projekt 2</span>
+            <div class="flex-layout">
+                
+                
+                <span class="logo-brand">Projekt 2</span>
             </div>
             <ul class="primary-navigation" id="primary-navigation">
-                <li><a class="nav-link" href="#Home">Hem</a></li>
+                <li><a class="nav-link" href="index.html">Hem</a></li>
+            
                 <li class="dropdown">
-                    <a class="nav-link" href="#Portfolio">HTML</a>
+                    <a class="nav-link" href="">HTML</a>
                     <ul>
-                        <li><a class="nav-link" href="#webb">HTMLs Historia</a></li> 
-                        <li><a class="nav-link" href="#prog">HTMLs Grunder</a></li> 
-                        <li><a class="nav-link" href="#">Tillgänglighet</a></li>
-                        <li><a class="nav-link" href="#">Document Object Model</a></li>
+                        <li>
+                            <a class="nav-link" href="historia.html">HTMLs Historia</a>
+                        </li> 
+                        <li>
+                            <a class="nav-link" href="grunderna.html">HTMLs Grunder</a>
+                        </li> 
+                        <li>
+                            <a class="nav-link" href="tillgänglighet.html">Tillgänglighet</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="dom.html">Document Object Model</a>
+                        </li>
+
+                        
+                        
+                        
+
+                        
                     </ul>
                 </li>
-                <li><a class="nav-link" href="#Contacts">Kontakt</a></li>
+                <li><a class="nav-link"  href="#Contacts">Kontakt</a></li>
             </ul>
             <button class="hamburger-button" id="hamburger-button" aria-label="hamburger-button" aria-expanded="false">
                 <svg fill="var(--clr-secondary)" class="icon-hamburger" viewbox="0 0 100 100" width="32">
@@ -35,7 +58,7 @@
                 </svg>
             </button>
         </nav>
-    </header>   
+    </header> 
 
 
     <main id="MainContent"> 
@@ -53,8 +76,8 @@
                     <p>Document Object Model, förkortat DOM, fungerar som en bro mellan din HTML-kod och programmeringsspråk som JavaScript. När webbläsaren läser in din webbsida skapar den en objektbaserad representation av innehållet i en trädstruktur. Detta gör att varje enskild del av sidan, från den största rubriken till den minsta bilden, blir ett objekt som går att styra och förändra i realtid efter att sidan har laddats.</p>
                 </article>
             <figure>
-                <img src="/assets/images/DOM-model.svg (1).png" alt="Document Object Model tree structure diagram" class="img" width="500" height="350" loading="lazy">
-                <figcaption>DOM model diagram</figcaption>
+                <img src="/assets/images/DOM-model.svg (1).png" alt="Document Object Model tree structure" class="img" width="500" height="350" loading="lazy">
+        
             </figure>
 
             <article>
@@ -82,7 +105,7 @@
             </article>
 
             <figure>
-                <img src="/assets/images/event-propagation-v2.png" alt="image of Arpanet logo" class="img">
+                <img src="/assets/images/event-propagation-v2.png" alt="Event propagation flow diagram" class="img">
             </figure>
 
             <article>

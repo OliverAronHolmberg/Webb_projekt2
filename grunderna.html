@@ -3,37 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Comprehensive guide to HTML, CSS, and JavaScript fundamentals. Learn semantic elements, styling properties, and DOM manipulation with practical examples.">
-    <title>Grunderna</title>
+    <meta name="description" content="Explore web development fundamentals including HTML, CSS, and JavaScript. Learn about web history, accessibility, and DOM manipulation.">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <title>Webbutveckling Grunderna</title>
 
     <link rel="stylesheet" href="./Dropdown-menu/style.css">
     <script src="./Dropdown-menu/menu.js" defer></script>
 </head>
 <body>
+
+
     <a class="SkipLink" href="#MainContent">Skip to main content</a>
+    <!-- Header -->
     <header>
         <nav>
             <div class="flex-layout">
-                <!--en SVG logo så jag kan ändra färg ... se i style.css under selector svg g path. -->
+                
+                
                 <span class="logo-brand">Projekt 2</span>
             </div>
             <ul class="primary-navigation" id="primary-navigation">
-                <li><a class="nav-link" href="#Home">Hem</a></li>
-                <!-- dropdown-meny skapas med dropdown-klass -->
+                <li><a class="nav-link" href="index.html">Hem</a></li>
+            
                 <li class="dropdown">
-                    <a class="nav-link" href="#Portfolio">HTML</a>
+                    <a class="nav-link" href="#">HTML</a>
                     <ul>
                         <li>
-                            <a class="nav-link" href="#webb">HTMLs Historia</a>
+                            <a class="nav-link" href="historia.html">HTMLs Historia</a>
                         </li> 
                         <li>
-                            <a class="nav-link" href="#prog">HTMLs Grunder</a>
+                            <a class="nav-link" href="grunderna.html">HTMLs Grunder</a>
                         </li> 
                         <li>
-                            <a class="nav-link" href="#">Tillgänglighet</a>
+                            <a class="nav-link" href="tillgänglighet.html">Tillgänglighet</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#">Document Object Model</a>
+                            <a class="nav-link" href="dom.html">Document Object Model</a>
                         </li>
 
                         
@@ -53,11 +58,11 @@
                 </svg>
             </button>
         </nav>
-    </header>   
+    </header> 
 
 
     <main>
-        <section class="title-section">
+        <section class="title-section" id="Home">
             <article class="div-title animate-fade-in-up">
                 <h1>HMTL, CSS och JS Grunder </h1>
                 <p class="white-p">Här kan du läsa om de vanligaste HTML-elementen och CSS-egenskaperna. Använd innehållsmenyn nedan till höger för att nå en specifik funktion</p>
@@ -75,61 +80,61 @@
                         <a href="#HTML">HMTL</a>
                         <ol class="block-list2">
                             <li>
-                                <a href="">
+                                <a href="#meta-section">
                                     Meta
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="#semantic-section">
                                     Semantiska Element
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="#text-section">
                                     Text & Rubriker
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="#layout-html-section">
                                     Layout
                                 </a>
                             </li>
                         </ol>
                     </li>
                     <li>
-                        <a href="">CSS</a>
+                        <a href="#CSS">CSS</a>
                         <ol>
                             <li>
-                                <a href="">Typsnitt och stilar</a>
+                                <a href="#font-section">Typsnitt och stilar</a>
                             </li>
                             <li>
-                                <a href="">Färger</a> 
+                                <a href="#color-section">Färger</a> 
                             </li>
                             <li>
-                                <a href="">Layout</a>
+                                <a href="#layout-css-section">Layout</a>
                             </li>
                             <li>
-                                <a href="">Storlek och marginal</a>   
+                                <a href="#size-section">Storlek och marginal</a>   
                             </li>
                             <li>
-                                <a href="">Effekter</a>   
+                                <a href="#effects-section">Effekter</a>   
                             </li>
                         </ol>
                     </li>
                     <li>
-                        <a href="">JavaScript</a>
+                        <a href="#JavaScript">JavaScript</a>
                         <ol>
                             <li>
-                                <a href="">Variabler och Datatyper</a>
+                                <a href="#variables-section">Variabler och Datatyper</a>
                             </li>
                             <li>
-                                <a href="">Funktioner</a>
+                                <a href="#functions-section">Funktioner</a>
                             </li>
                             <li>
-                                <a href="">DOM-manipulation</a>   
+                                <a href="#dom-section">DOM-manipulation</a>   
                             </li>
                             <li>
-                                <a href="">API:er och Fetch</a>
+                                <a href="#api-section">API:er och Fetch</a>
                             </li>
                         </ol>
                     </li>
@@ -139,8 +144,8 @@
             <section>
                 <h2 class="HTML-h2" id="HTML">HTML</h2>
                 <article>
-                    <h3 class="Block-h3">Meta</h3>
-                    <article class="element animate-fade-in-up-delay-1">
+                    <h3 class="Block-h3" id="meta-section">Meta</h3>
+                    <article class="element animate-fade-in-up">
                         <p>&lt;!DOCTYPE&gt;</p>
                         <p>Denna deklaration specificerar vilken version av HTML som används i dokumentet.</p>
                     </article>
@@ -166,11 +171,11 @@
                     </article>
                     <article class="element">
                         <p>&lt;body&gt;</p>
-                        <p>Huvudinnehållsområdet i HTML-dokumentet där text, bilder och annat innehåll visas.</p>
+                        <p>Huvudinnehåltsområdet i HTML-dokumentet där text, bilder och annat innehåll visas.</p>
                     </article>
                 
 
-                <h3 class="Block-h3">Semantiska element</h3>
+                <h3 class="Block-h3" id="semantic-section">Semantiska element</h3>
                     <article class="element">
                         <p>&lt;main&gt;</p>
                         <p>Representerar huvudinnehållet i dokumentet, och det skall endast finnas ett &lt;main&gt;-element på varje HTML-sida.</p>
@@ -197,7 +202,7 @@
                     </article>
                 
 
-                <h3 class="Block-h3">Text & Rubriker</h3>
+                <h3 class="Block-h3" id="text-section">Text & Rubriker</h3>
                 
                     <article class="element">
                         <p>&lt;a&gt;</p>
@@ -237,7 +242,7 @@
                     </article>
                 
 
-                <h3 class="Block-h3">Layout</h3>
+                <h3 class="Block-h3" id="layout-html-section">Layout</h3>
                 
                     <article class="element">
                         <p>&lt;div&gt;</p>
@@ -245,9 +250,9 @@
                     </article>
                 
 
-                <h2>CSS-egenskaper</h2>
+                <h2 id="CSS">CSS-egenskaper</h2>
 
-                <h3 class="Block-h3">Typsnitt & stilar</h3>
+                <h3 class="Block-h3" id="font-section">Typsnitt & stilar</h3>
                 
                     <article class="element">
                         <p>font-family</p>
@@ -275,7 +280,7 @@
                     </article>
                 
 
-                <h3 class="Block-h3">Färger</h3>
+                <h3 class="Block-h3" id="color-section">Färger</h3>
                 
                     <article class="element">
                         <p>color</p>
@@ -299,7 +304,7 @@
                     </article>
                 
 
-                <h3 class="Block-h3">Layout</h3>
+                <h3 class="Block-h3" id="layout-css-section">Layout</h3>
                 
                     <article class="element">
                         <p>position</p>
@@ -339,7 +344,7 @@
                     </article>
                 
 
-                <h3 class="Block-h3">Storlek & marginal</h3>
+                <h3 class="Block-h3" id="size-section">Storlek & marginal</h3>
                
                     <article class="element">
                         <p>width</p>
@@ -371,7 +376,7 @@
                     </article>
                
 
-                <h3 class="Block-h3">Effekter</h3>
+                <h3 class="Block-h3" id="effects-section">Effekter</h3>
                 
                     <article class="element">
                         <p>object-fit</p>
@@ -388,8 +393,8 @@
                     
                 </article>
 
-                <h2>JavaScript</h2>
-                <h3>Variabler och Datatyper</h3>
+                <h2 id="JavaScript">JavaScript</h2>
+                <h3 class="Block-h3" id="variables-section">Variabler och Datatyper</h3>
                 <article class="element">
                     <p>let & const</p>
                     <p>Används för att deklarera variabler; let för värden som kan ändras och const för konstanta värden.</p>
@@ -399,7 +404,7 @@
                     <p>De vanligaste datatyperna för att hantera text, siffror och sant/falskt-värden.</p>
                 </article>
 
-                <h3>Funktioner</h3>
+                <h3 class="Block-h3" id="functions-section">Funktioner</h3>
                 <article class="element">
                     <p>function name() { ... }</p>
                     <p>En samling instruktioner som kan återanvändas genom att anropa funktionens namn.</p>
@@ -409,7 +414,7 @@
                     <p>Ett modernare och mer kortfattat sätt att skriva funktioner i JavaScript.</p>
                 </article>
 
-                <h3>DOM-manipulation</h3>
+                <h3 class="Block-h3" id="dom-section">DOM-manipulation</h3>
                 <article class="element">
                     <p>querySelector()</p>
                     <p>Metod för att hitta och välja element i HTML-dokumentet baserat på CSS-selektorer.</p>
@@ -419,7 +424,7 @@
                     <p>Används för att lyssna efter händelser, som t.ex. klick eller tangenttryck, och utföra kod när de sker.</p>
                 </article>
 
-                <h3>API:er och Fetch</h3>
+                <h3 class="Block-h3" id="api-section">API:er och Fetch</h3>
                 <article class="element">
                     <p>fetch()</p>
                     <p>Används för att hämta data över nätverket, till exempel från ett externt API.</p>
